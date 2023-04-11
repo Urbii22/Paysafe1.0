@@ -85,8 +85,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/imagen_de_whatsapp_2023_03_28_a_las_14_48_00" />
-
+        android:src = "@drawable/imagen_de_whatsapp_2023_03_28_a_las_14_48_00"
+    />
     <TextView
         android:id="@+id/textView6"
         android:layout_width="157dp"
