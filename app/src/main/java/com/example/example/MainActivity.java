@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         EditText username = (EditText) findViewById(R.id.editTextUssername);
         EditText password = (EditText) findViewById(R.id.editTextTextPassword);
         TextView error = (TextView) findViewById(R.id.textView5);
+        Boolean falg = true;
 
         try {
             FileInputStream inputStream = openFileInput(nombreArchivo);
@@ -100,11 +101,15 @@ public class MainActivity extends AppCompatActivity {
 
                 if (StoredUsername.equals(username.getText().toString()) && StoredPassword.equals(password.getText().toString())) {
                     startActivity(new Intent(MainActivity.this, MainActivity2.class));
+                    falg = false;
                     break;
+
                 }
             }
+            if (!falg) {
+                error.setVisibility(View.VISIBLE);
+            }
 
-            error.setVisibility(View.VISIBLE);
 
 
             inputStream.close();
