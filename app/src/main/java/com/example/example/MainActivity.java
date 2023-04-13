@@ -3,6 +3,7 @@ package com.example.example;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void EscribirFichero(){ //deberia sr para la parte del registro
+    public void EscribirFichero(){ //deberia ser para la parte del registro
 
         EditText username = (EditText) findViewById(R.id.editTextUssername);
         EditText password = (EditText) findViewById(R.id.editTextTextPassword);
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 EscribirFichero();
-                LeerFichero();
+                //LeerFichero();
             }
         });
 
@@ -80,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void LeerFichero(){
         String nombreArchivo = "miarchivo2.txt";
+        EditText username = (EditText) findViewById(R.id.editTextUssername);
+        EditText password = (EditText) findViewById(R.id.editTextTextPassword);
+        TextView error = (TextView) findViewById(R.id.textView5);
 
         try {
             FileInputStream inputStream = openFileInput(nombreArchivo);
@@ -90,7 +94,18 @@ public class MainActivity extends AppCompatActivity {
 
             while ((linea = bufferedReader.readLine()) != null) {
                 stringBuilder.append(linea).append("\n");
+                String StoredData[] = linea.split(" ! ");
+                String StoredUsername = StoredData[0];
+                String StoredPassword = StoredData[1];
+
+                if (StoredUsername.equals(username.getText().toString()) && StoredPassword.equals(password.getText().toString())) {
+                    startActivity(new Intent(MainActivity.this, MainActivity2.class));
+                    break;
+                }
             }
+
+            error.setVisibility(View.VISIBLE);
+
 
             inputStream.close();
             String contenido = stringBuilder.toString();
