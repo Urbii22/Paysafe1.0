@@ -73,13 +73,14 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                EscribirFichero();
-               //LeerFichero();
+               LeerFichero();
             }
         });
 
     }
 
     public void LeerFichero(){
+        System.out.println("Leyendo fichero");
         String nombreArchivo = "miarchivo2.txt";
         EditText username = (EditText) findViewById(R.id.editTextUssername);
         EditText password = (EditText) findViewById(R.id.editTextTextPassword);
@@ -108,11 +109,6 @@ public class MainActivity extends AppCompatActivity {
                     error.setVisibility(View.VISIBLE);
                 }
             }
-
-
-
-
-
             inputStream.close();
             String contenido = stringBuilder.toString();
             System.out.println(contenido);
