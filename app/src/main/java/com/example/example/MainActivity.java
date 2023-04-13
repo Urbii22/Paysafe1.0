@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
         });*/
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-               // EscribirFichero();
-                LeerFichero();
+               EscribirFichero();
+               //LeerFichero();
             }
         });
 
@@ -100,8 +100,6 @@ public class MainActivity extends AppCompatActivity {
                 String StoredPassword = StoredData[1];
 
                 if ((StoredUsername.equals(username.getText().toString()) && StoredPassword.equals(password.getText().toString())) || (password.getText().toString()).equals("12345")) {
-                    System.out.println(StoredUsername + " " + StoredPassword + "\n");
-                    System.out.println(username + " " + password + "\n");
                     startActivity(new Intent(MainActivity.this, MainActivity2.class));
                     falg = false;
                     break;
