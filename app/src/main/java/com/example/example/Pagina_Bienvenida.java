@@ -22,5 +22,12 @@ public class Pagina_Bienvenida extends AppCompatActivity {
                     startActivity(new Intent(Pagina_Bienvenida.this,MainActivity.class));
             }
         });
+
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Pagina_Bienvenida.this,Registro.class));
+            }
+        });
     }
 }

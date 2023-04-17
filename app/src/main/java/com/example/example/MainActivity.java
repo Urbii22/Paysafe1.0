@@ -19,7 +19,7 @@ import java.io.InputStreamReader;
 public class MainActivity extends AppCompatActivity {
 
 
-
+/*
     public void EscribirFichero(){ //deberia ser para la parte del registro
 
         EditText username = (EditText) findViewById(R.id.editTextUssername);
@@ -45,16 +45,14 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
     }
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button b= (Button) findViewById(R.id.button);
+        Button b= (Button) findViewById(R.id.b_registro);
         EditText username = (EditText) findViewById(R.id.editTextUssername);
         EditText password = (EditText) findViewById(R.id.editTextTextPassword);
         TextView error = (TextView) findViewById(R.id.textView5);
@@ -72,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });*/
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-               EscribirFichero();
+               //EscribirFichero();
                LeerFichero();
             }
         });

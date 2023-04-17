@@ -12,7 +12,7 @@ import android.widget.EditText;
 import java.io.File;
 import java.io.FileOutputStream;
 
-public class Registro extends AppCompatActivity {
+public class ModoEmpresa extends AppCompatActivity {
     public void EscribirFichero(){ //deberia ser para la parte del registro
 
         EditText username = (EditText) findViewById(R.id.usuario);
@@ -49,20 +49,20 @@ public class Registro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro);
+        setContentView(R.layout.activity_modo_empresa);
         Button bRegistro = (Button) findViewById(R.id.b_registro);
         Button bEmpresa = (Button) findViewById(R.id.b_empresa);
 
         bRegistro.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 EscribirFichero();
-                startActivity(new Intent(Registro.this,MainActivity2.class));
+                startActivity(new Intent(ModoEmpresa.this,MainActivity2.class));
             }
         });
 
         bEmpresa.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(Registro.this,ModoEmpresa.class));
+                startActivity(new Intent(ModoEmpresa.this,Registro.class));
             }
         });
     }

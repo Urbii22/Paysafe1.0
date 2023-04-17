@@ -1,10 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nombre"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".MainActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <Button
+      android:id="@+id/b_registro"
+      android:layout_width="219dp"
+      android:layout_height="93dp"
+      android:backgroundTint="#0F2000"
+      android:text="Registrarme"
+      android:textColor="#D9E5C6"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.713" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="148dp"
+      android:layout_height="145dp"
+      android:src="@drawable/imagen_de_whatsapp_2023_03_28_a_las_14_48_00"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.003"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="157dp"
+      android:layout_height="79dp"
+      android:text="BIENVENIDO AL REGISTRO"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.783"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.101" />
+
+  <EditText
+      android:id="@+id/correo"
+      android:layout_width="325dp"
+      android:layout_height="35dp"
+      android:ems="10"
+      android:hint="Introduzca aquí su correo"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.558"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.477" />
+
+  <EditText
+      android:id="@+id/contraseña2"
+      android:layout_width="326dp"
+      android:layout_height="37dp"
+      android:ems="10"
+      android:hint="Vuelva a introducir su contraseña"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.564"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.582" />
+
+  <EditText
+      android:id="@+id/fecha_nacimiento"
+      android:layout_width="325dp"
+      android:layout_height="34dp"
+      android:ems="10"
+      android:hint="Introduzca aquí su fecha de nacimiento (dd.mm.aaaa)"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.558"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.427" />
+
+  <EditText
+      android:id="@+id/sexo"
+      android:layout_width="325dp"
+      android:layout_height="33dp"
+      android:ems="10"
+      android:hint="Introduzca aquí su sexo"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.558"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.379" />
+
+  <EditText
+      android:id="@+id/nombreApellidos"
+      android:layout_width="324dp"
+      android:layout_height="37dp"
+      android:ems="10"
+      android:hint="introduce aquí su nombre y apellidos"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.551"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.329" />
+
+  <EditText
+      android:id="@+id/usuario"
+      android:layout_width="324dp"
+      android:layout_height="34dp"
+      android:ems="10"
+      android:hint="Introduce aquí su nombre de usuario"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.551"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.279" />
+
+  <EditText
+      android:id="@+id/contraseña1"
+      android:layout_width="326dp"
+      android:layout_height="35dp"
+      android:ems="10"
+      android:hint="Intoroduzca aquí su contraseña"
+      android:inputType="textPersonName"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.564"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.528" />
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="¿Eres una empresa?"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.8" />
+
+  <Button
+      android:id="@+id/b_empresa"
+      android:layout_width="219dp"
+      android:layout_height="93dp"
+      android:backgroundTint="#DAE6C7"
+      android:text="Modo empresa"
+      android:textColor="#0F2000"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
