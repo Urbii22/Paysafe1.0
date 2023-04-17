@@ -52,18 +52,19 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="187dp"
-        android:layout_height="35dp"
+        android:layout_width="195dp"
+        android:layout_height="50dp"
         android:foregroundTint="#F10E0E"
-        android:text="USUARIO INCORRECTO"
+        android:text="USUARIO  O CONTRASEÑA INCORRECTOS"
         android:textColor="#FD0000"
         android:textSize="16sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386"
+        app:layout_constraintVertical_bias="0.371"
         tools:visibility="visible" />
 
     <ImageView
