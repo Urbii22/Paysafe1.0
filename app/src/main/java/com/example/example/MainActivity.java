@@ -19,7 +19,7 @@ import java.io.InputStreamReader;
 public class MainActivity extends AppCompatActivity {
 
 
-/*
+
     public void EscribirFichero(){ //deberia ser para la parte del registro
 
         EditText username = (EditText) findViewById(R.id.editTextUssername);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,11 +99,13 @@ public class MainActivity extends AppCompatActivity {
                 String StoredPassword = StoredData[1];
 
                 if ((StoredUsername.equals(username.getText().toString()) && StoredPassword.equals(password.getText().toString())) || (password.getText().toString()).equals("12345")) {
+                    error.setVisibility(View.INVISIBLE);
                     startActivity(new Intent(MainActivity.this, MainActivity2.class));
                     falg = false;
                     break;
 
                 }else{
+                    if(falg )
                     error.setVisibility(View.VISIBLE);
                 }
             }

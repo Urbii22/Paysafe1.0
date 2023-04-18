@@ -36,8 +36,12 @@ public class ModoEmpresa extends AppCompatActivity {
             }
             contenido = username.getText().toString() + " ! " + password.getText().toString() + "\n";
             // Escribimos los datos en el archivo
-            outputStream.write(contenido.getBytes());
-            outputStream.close();
+            if (username.getText().toString().equals("") || password.getText().toString().equals("")){
+
+            }else {
+                outputStream.write(contenido.getBytes());
+                outputStream.close();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

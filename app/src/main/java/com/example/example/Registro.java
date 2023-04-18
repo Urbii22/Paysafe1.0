@@ -8,11 +8,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 
 public class Registro extends AppCompatActivity {
+
+
+
+
+
     public void EscribirFichero(){ //deberia ser para la parte del registro
 
         EditText username = (EditText) findViewById(R.id.usuario);
@@ -31,38 +40,45 @@ public class Registro extends AppCompatActivity {
             } else {
                 outputStream = openFileOutput(nombreArchivo, Context.MODE_PRIVATE);
             }
-            if (username.getText().toString().equals("") || password.getText().toString().equals("")){
-                return;
-            }
             contenido = username.getText().toString() + " ! " + password.getText().toString() + "\n";
             // Escribimos los datos en el archivo
-            outputStream.write(contenido.getBytes());
-            outputStream.close();
+            if (username.getText().toString().equals("") || password.getText().toString().equals("")){
+
+            }else {
+                outputStream.write(contenido.getBytes());
+                outputStream.close();
+            }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        TextView error = (TextView) findViewById(R.id.error);
+
+
         Button bRegistro = (Button) findViewById(R.id.b_registro);
         Button bEmpresa = (Button) findViewById(R.id.b_empresa);
 
         bRegistro.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 EscribirFichero();
-                startActivity(new Intent(Registro.this,MainActivity2.class));
+
+                    startActivity(new Intent(Registro.this,MainActivity2.class));
+
             }
         });
 
         bEmpresa.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(Registro.this,ModoEmpresa.class));
+                    startActivity(new Intent(Registro.this,ModoEmpresa.class));
+
+
             }
         });
     }
