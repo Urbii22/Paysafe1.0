@@ -69,7 +69,7 @@ public class Registro extends AppCompatActivity {
             public void onClick(View view) {
                 EscribirFichero();
 
-                    startActivity(new Intent(Registro.this,MainActivity2.class));
+                    startActivity(new Intent(Registro.this, MenuBar.class));
 
             }
         });

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });*/
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-               //EscribirFichero();
+               EscribirFichero();
                LeerFichero();
             }
         });
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if ((StoredUsername.equals(username.getText().toString()) && StoredPassword.equals(password.getText().toString())) || (password.getText().toString()).equals("12345")) {
                     error.setVisibility(View.INVISIBLE);
-                    startActivity(new Intent(MainActivity.this, MainActivity2.class));
+                    startActivity(new Intent(MainActivity.this, MenuBar.class));
                     falg = false;
                     break;
 
