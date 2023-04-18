@@ -105,8 +105,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 }else{
-                    if(falg )
-                    error.setVisibility(View.VISIBLE);
+                    if(falg){
+                        error.setVisibility(View.VISIBLE);
+                    }
                 }
             }
             inputStream.close();
