@@ -50,32 +50,62 @@
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.089" />
 
-  <EditText
-      android:id="@+id/fecha_nacimiento"
-      android:layout_width="344dp"
-      android:layout_height="46dp"
-      android:ems="10"
-      android:hint="Fecha de nacimiento (dd.mm.aaaa)"
-      android:inputType="textPersonName"
-      android:textSize="16sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.671"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.452" />
+
 
   <ImageView
       android:id="@+id/icono_fechaNacimiento"
       android:layout_width="29dp"
       android:layout_height="41dp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/fecha_nacimiento"
+      app:layout_constraintEnd_toStartOf="@+id/DireccionEmpresa"
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.455"
       app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+
+
+  <ImageView
+      android:id="@+id/icono_contraseña1"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/contraseña1"
+      app:layout_constraintHorizontal_bias="0.888"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.564"
+      app:srcCompat="@drawable/baseline_lock_24" />
+
+
+
+  <ImageView
+      android:id="@+id/icono_correo"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/DomicilioFiscalEmpresa"
+      app:layout_constraintHorizontal_bias="0.888"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.51"
+      app:srcCompat="@drawable/baseline_email_24" />
+
+  <EditText
+      android:id="@+id/DomicilioFiscalEmpresa"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Introduzca aquí su correo"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.681"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.507" />
 
   <EditText
       android:id="@+id/contraseña1"
@@ -91,18 +121,6 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.563" />
-
-  <ImageView
-      android:id="@+id/icono_contraseña1"
-      android:layout_width="29dp"
-      android:layout_height="41dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/contraseña1"
-      app:layout_constraintHorizontal_bias="0.888"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.564"
-      app:srcCompat="@drawable/baseline_lock_24" />
 
   <EditText
       android:id="@+id/contraseña2"
@@ -120,33 +138,6 @@
       app:layout_constraintVertical_bias="0.617" />
 
   <ImageView
-      android:id="@+id/icono_correo"
-      android:layout_width="29dp"
-      android:layout_height="41dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/correo"
-      app:layout_constraintHorizontal_bias="0.888"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.51"
-      app:srcCompat="@drawable/baseline_email_24" />
-
-  <EditText
-      android:id="@+id/correo"
-      android:layout_width="342dp"
-      android:layout_height="46dp"
-      android:ems="10"
-      android:hint="Introduzca aquí su correo"
-      android:inputType="textPersonName"
-      android:textSize="16sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.681"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.507" />
-
-  <ImageView
       android:id="@+id/icono_contraseña2"
       android:layout_width="29dp"
       android:layout_height="41dp"
@@ -158,35 +149,6 @@
       app:layout_constraintVertical_bias="0.618"
       app:srcCompat="@drawable/baseline_lock_24" />
 
-  <EditText
-      android:id="@+id/sexo"
-      android:layout_width="342dp"
-      android:layout_height="46dp"
-      android:ems="10"
-      android:hint="Introduzca aquí su sexo"
-      android:inputType="textPersonName"
-      android:textSize="16sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.681"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.397" />
-
-  <EditText
-      android:id="@+id/nombreApellidos"
-      android:layout_width="342dp"
-      android:layout_height="46dp"
-      android:ems="10"
-      android:hint="introduce aquí su nombre y apellidos"
-      android:inputType="textPersonName"
-      android:textSize="16sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.681"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.343" />
 
   <EditText
       android:id="@+id/usuario"
@@ -202,6 +164,53 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.288" />
+
+  <EditText
+      android:id="@+id/NombreEmpresa"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="introduce aquí su nombre y apellidos"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.681"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.343" />
+
+  <EditText
+      android:id="@+id/CorreoEmpresa"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Introduzca aquí su sexo"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.681"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.397" />
+
+  <EditText
+      android:id="@+id/DireccionEmpresa"
+      android:layout_width="344dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Fecha de nacimiento (dd.mm.aaaa)"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.671"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.452" />
+
+
 
   <TextView
       android:id="@+id/textView13"
@@ -261,7 +270,7 @@
       android:layout_width="29dp"
       android:layout_height="41dp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/nombreApellidos"
+      app:layout_constraintEnd_toStartOf="@+id/NombreEmpresa"
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
@@ -273,7 +282,7 @@
       android:layout_width="29dp"
       android:layout_height="41dp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/sexo"
+      app:layout_constraintEnd_toStartOf="@+id/CorreoEmpresa"
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
