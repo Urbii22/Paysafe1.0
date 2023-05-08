@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.example.databinding.FragmentGalleryBinding;
+import com.example.example.databinding.FragmentHistoryBinding;
 
 public class HistoryFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentHistoryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         HistoryViewModel historyViewModel =
                 new ViewModelProvider(this).get(HistoryViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentHistoryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
