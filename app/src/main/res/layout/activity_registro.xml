@@ -10,8 +10,8 @@
 
   <Button
       android:id="@+id/b_registro"
-      android:layout_width="219dp"
-      android:layout_height="93dp"
+      android:layout_width="191dp"
+      android:layout_height="74dp"
       android:backgroundTint="#0F2000"
       android:text="Registrarme"
       android:textColor="#D9E5C6"
@@ -21,7 +21,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.713" />
+      app:layout_constraintVertical_bias="0.766" />
 
   <ImageView
       android:id="@+id/imageView"
@@ -38,122 +38,179 @@
 
   <TextView
       android:id="@+id/textView6"
-      android:layout_width="157dp"
-      android:layout_height="79dp"
-      android:text="BIENVENIDO AL REGISTRO"
+      android:layout_width="170dp"
+      android:layout_height="87dp"
+      android:text="BIENVENIDO AL  REGISTRO"
       android:textSize="24sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.783"
+      app:layout_constraintHorizontal_bias="0.838"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.101" />
+      app:layout_constraintVertical_bias="0.089" />
+
+
+
+  <ImageView
+      android:id="@+id/icono_fechaNacimiento"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/DireccionEmpresa"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.455"
+      app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+
+
+  <ImageView
+      android:id="@+id/icono_contraseña1"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/contraseña1"
+      app:layout_constraintHorizontal_bias="0.888"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.564"
+      app:srcCompat="@drawable/baseline_lock_24" />
+
+
+
+  <ImageView
+      android:id="@+id/icono_correo"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/DomicilioFiscalEmpresa"
+      app:layout_constraintHorizontal_bias="0.888"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.51"
+      app:srcCompat="@drawable/baseline_email_24" />
 
   <EditText
-      android:id="@+id/correo"
-      android:layout_width="325dp"
-      android:layout_height="35dp"
+      android:id="@+id/DomicilioFiscalEmpresa"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
       android:ems="10"
       android:hint="Introduzca aquí su correo"
       android:inputType="textPersonName"
-      android:textSize="10sp"
+      android:textSize="16sp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.558"
+      app:layout_constraintHorizontal_bias="0.681"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.477" />
-
-  <EditText
-      android:id="@+id/contraseña2"
-      android:layout_width="326dp"
-      android:layout_height="37dp"
-      android:ems="10"
-      android:hint="Vuelva a introducir su contraseña"
-      android:inputType="textPersonName"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.564"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.582" />
-
-  <EditText
-      android:id="@+id/fecha_nacimiento"
-      android:layout_width="325dp"
-      android:layout_height="34dp"
-      android:ems="10"
-      android:hint="Introduzca aquí su fecha de nacimiento (dd.mm.aaaa)"
-      android:inputType="textPersonName"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.558"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.427" />
-
-  <EditText
-      android:id="@+id/sexo"
-      android:layout_width="325dp"
-      android:layout_height="33dp"
-      android:ems="10"
-      android:hint="Introduzca aquí su sexo"
-      android:inputType="textPersonName"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.558"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.379" />
-
-  <EditText
-      android:id="@+id/nombreApellidos"
-      android:layout_width="324dp"
-      android:layout_height="37dp"
-      android:ems="10"
-      android:hint="introduce aquí su nombre y apellidos"
-      android:inputType="textPersonName"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.551"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.329" />
-
-  <EditText
-      android:id="@+id/usuario"
-      android:layout_width="324dp"
-      android:layout_height="34dp"
-      android:ems="10"
-      android:hint="Introduce aquí su nombre de usuario"
-      android:inputType="textPersonName"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.551"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.279" />
+      app:layout_constraintVertical_bias="0.507" />
 
   <EditText
       android:id="@+id/contraseña1"
-      android:layout_width="326dp"
-      android:layout_height="35dp"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
       android:ems="10"
       android:hint="Intoroduzca aquí su contraseña"
       android:inputType="textPersonName"
-      android:textSize="10sp"
+      android:textSize="16sp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.564"
+      app:layout_constraintHorizontal_bias="0.681"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.528" />
+      app:layout_constraintVertical_bias="0.563" />
+
+  <EditText
+      android:id="@+id/contraseña2"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Vuelva a introducir su contraseña"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.681"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.617" />
+
+  <ImageView
+      android:id="@+id/icono_contraseña2"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/contraseña2"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.618"
+      app:srcCompat="@drawable/baseline_lock_24" />
+
+
+  <EditText
+      android:id="@+id/usuario"
+      android:layout_width="340dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Introduce aquí su nombre de usuario"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.633"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.288" />
+
+  <EditText
+      android:id="@+id/NombreEmpresa"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="introduce aquí su nombre y apellidos"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.681"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.343" />
+
+  <EditText
+      android:id="@+id/CorreoEmpresa"
+      android:layout_width="342dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Introduzca aquí su sexo"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.681"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.397" />
+
+  <EditText
+      android:id="@+id/DireccionEmpresa"
+      android:layout_width="344dp"
+      android:layout_height="46dp"
+      android:ems="10"
+      android:hint="Fecha de nacimiento (dd.mm.aaaa)"
+      android:inputType="textPersonName"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.671"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.452" />
+
+
 
   <TextView
       android:id="@+id/textView13"
@@ -165,12 +222,12 @@
       app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.8" />
+      app:layout_constraintVertical_bias="0.83" />
 
   <Button
       android:id="@+id/b_empresa"
-      android:layout_width="219dp"
-      android:layout_height="93dp"
+      android:layout_width="191dp"
+      android:layout_height="74dp"
       android:backgroundTint="#DAE6C7"
       android:text="Modo empresa"
       android:textColor="#0F2000"
@@ -195,5 +252,41 @@
       app:layout_constraintHorizontal_bias="0.852"
       app:layout_constraintStart_toStartOf="parent"
       tools:visibility="invisible" />
+
+  <ImageView
+      android:id="@+id/icono_usuario"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/usuario"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.292"
+      app:srcCompat="@drawable/baseline_person_24" />
+
+  <ImageView
+      android:id="@+id/icono_nombreApellidos"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/NombreEmpresa"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.347"
+      app:srcCompat="@drawable/baseline_drive_file_rename_outline_24" />
+
+  <ImageView
+      android:id="@+id/icono_sexo"
+      android:layout_width="29dp"
+      android:layout_height="41dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/CorreoEmpresa"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.401"
+      app:srcCompat="@drawable/baseline_woman_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
