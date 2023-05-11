@@ -66,7 +66,7 @@ public class ModoEmpresa extends AppCompatActivity {
                 EscribirFichero();
 
                 // Al entrar al menu no poder volver a la pagina de login si se pulsa atrás
-                Intent intent = new Intent(ModoEmpresa.this, MenuBar.class);
+                Intent intent = new Intent(ModoEmpresa.this, MenuBarEmpresa.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }

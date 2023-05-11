@@ -14,7 +14,7 @@
         <activity
             android:name=".MenuBarEmpresa"
             android:exported="false" />
-        
+
         <activity
             android:name=".ui.pay.PayConfirmation"
             android:exported="false" />
