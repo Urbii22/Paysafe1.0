@@ -1,12 +1,16 @@
 package com.example.example;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
+import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -41,12 +45,26 @@ public class MenuBar extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_pay, R.id.nav_receive, R.id.nav_history, R.id.nav_payment_method)
+                R.id.nav_pay, R.id.nav_receive, R.id.nav_history, R.id.nav_payment_method, R.id.nav_settings)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        navigationView.setNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_settings) {
+                Log.i("TEST", "You pressed settings");
+            } else {
+                // Handle other menu item selections
+                navController.navigate(id);
+            }
+
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
+        });
     }
 
     @Override
