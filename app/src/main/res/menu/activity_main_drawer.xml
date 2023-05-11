@@ -23,7 +23,7 @@
             android:title="@string/menu_payment_methods" />
     </group>
 
-    <group android:checkableBehavior="single"
+    <group android:checkableBehavior="none"
         android:id="@+id/_ignore_menu">
 
         <item

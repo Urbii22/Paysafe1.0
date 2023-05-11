@@ -1,11 +1,13 @@
 package com.example.example;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.example.ui.settings.SettingsActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -57,6 +59,7 @@ public class MenuBar extends AppCompatActivity {
 
             if (id == R.id.nav_settings) {
                 Log.i("TEST", "You pressed settings");
+                startActivity(new Intent(MenuBar.this, SettingsActivity.class));
             } else {
                 // Handle other menu item selections
                 navController.navigate(id);
