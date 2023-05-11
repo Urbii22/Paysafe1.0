@@ -14,7 +14,7 @@
         <activity
             android:name=".MenuBarEmpresa"
             android:exported="false" />
-        
+
         <activity
             android:name=".MenuBar"
             android:exported="false"
