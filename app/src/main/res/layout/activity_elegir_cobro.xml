@@ -27,11 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="77dp"
-        android:layout_marginBottom="101dp"
+        android:layout_marginBottom="48dp"
         android:text="Seleccione Metodo para recibr el dinero"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/Tarjeta"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -41,6 +42,7 @@
         android:layout_marginStart="83dp"
         android:layout_marginEnd="109dp"
         android:layout_marginBottom="51dp"
+        android:backgroundTint="#0F2000"
         android:contentDescription="Tarjeta"
         android:text="Tarjeta"
         app:layout_constraintBottom_toTopOf="@+id/Wallet"
@@ -53,11 +55,13 @@
         android:layout_height="93dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="109dp"
-        android:layout_marginBottom="257dp"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="#0F2000"
         android:contentDescription="Wallet"
         android:text="Wallet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
