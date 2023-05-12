@@ -30,7 +30,7 @@ public class ElegirCobro extends AppCompatActivity {
         });
         Wallet.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(ElegirCobro.this, MetodosCobro.class));
+                startActivity(new Intent(ElegirCobro.this, WalletEmpesa.class));
             }
         });
     }
