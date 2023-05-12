@@ -16,14 +16,58 @@
     <string name="menu_settings">Ajustes</string>
 
     <!-- Preference Titles -->
-    <string name="notification_header">Notificaciones</string>
+    <string name="general_header">General</string>
+    <string name="information_header">Información</string>
+    <string name="account_header">Cuenta</string>
     <string name="sync_header">Sync</string>
 
+    <!-- Account Preferences -->
+    <string name="account_button">Cuenta</string>
+
     <!-- Notifications Preferences -->
+    <string name="notifications_header">Notificaciones</string>
+    <string name="notification_pref_header">Pagos, envíos y ofertas</string>
+    <string name="notification_pref_security_header">Seguridad</string>
+
     <string name="receive_notification_title">Recibir dinero</string>
     <string name="payment_request_notification_title">Recibir solicitudes de pago</string>
     <string name="send_notification_title">Enviar dinero</string>
     <string name="ads_notification_title">Anuncios y ofertas exclusivas</string>
+    <string name="ads_notification_summary">Recibir notificaciones acerca de ofertas y promociones que puedan serte de interés.</string>
+    <string name="security_notification_title">Alertas de seguridad</string>
+    <string name="security_notification_summary_on">Recibirás notificaciones de seguridad en este dispositivo.</string>
+    <string name="security_notification_summary_off">No recibirás notificaciones de seguridad en este dispositivo. Seguirás recibiendo alertas por email.</string>
+
+    <!-- Security & Privacy Preferences -->
+    <string name="privacy_security_header">Seguridad y privacidad</string>
+    <string name="security_pref_header">Inicio de sesión y pagos</string>
+    <string name="privacy_pref_header">Privacidad y gestión de datos</string>
+
+    <string name="use_biometrics">Usar medidas biométricas</string>
+    <string name="payment_confirmation">Confirmaciones de pago</string>
+    <string name="payment_confirmation_with_biometrics">Confirmación mediante medidas biométricas</string>
+    <string name="payment_confirmation_with_biometrics_summary">Permitir la confirmación de pagos mediante métodos de autenticación biométricos.</string>
+    <string name="authorized_devices">Dispositivos autorizados</string>
+    <string name="login_history">Historial de inicios de sesión</string>
+    <string name="collect_data">Recolectar datos anónimos de uso</string>
+    <string name="collect_data_summary">Permitir que la aplicación recoja datos de uso de manera anónima. Los datos se usan para mejorar las funcionalidades de la aplicación y corregir errores.</string>
+    <string name="request_data">Solicitar historial de datos de uso</string>
+    <string name="privacy_policy">Política de privacidad</string>
+
+    <!-- About Preferences -->
+    <string name="about_header">Acerca de</string>
+    <string name="about_perf_header">Recursos externos</string>
+    <string name="payment_policy">Política de uso y pagos</string>
+    <string name="final_user_agreement">Acuerdos del usuario final</string>
+    <string name="legal_agreement">Acuerdos legales</string>
+    <string name="thanks_to">Agradecimientos</string>
+
+    <!-- Help Preferences -->
+    <string name="help_header">Ayuda</string>
+    <string name="help_center">Ayuda</string>
+    <string name="faq">FAQ</string>
+    <string name="bug_report">Reportar errores</string>
+    <string name="chat_with_us">Contacta con nosotros</string>
 
     <!-- Messages Preferences -->
     <string name="signature_title">Your signature</string>

@@ -1,10 +1,42 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Preference
-        app:fragment="com.example.example.ui.settings.SettingsFragment"
-        app:icon="@drawable/ic_menu_settings"
-        app:key="settings_header"
-        app:title="Settings" />
+    <PreferenceCategory app:title="@string/general_header">
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$NotificationFragment"
+            app:icon="@drawable/ic_settings_notifications"
+            app:key="notifications_header"
+            app:title="@string/notifications_header" />
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$PrivacySecurityFragment"
+            app:icon="@drawable/ic_settings_privacy_security"
+            app:key="privacy_security_header"
+            app:title="@string/privacy_security_header" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/information_header">
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$AboutFragment"
+            app:icon="@drawable/ic_settings_about"
+            app:key="about_header"
+            app:title="@string/about_header" />
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$HelpFragment"
+            app:icon="@drawable/ic_settings_help"
+            app:key="help_header"
+            app:title="@string/help_header" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/account_header">
+
+        <!-- Cuenta -->
+
+    </PreferenceCategory>
 
     <Preference
         app:fragment="com.example.example.ui.settings.SettingsActivity$MessagesFragment"
@@ -17,5 +49,11 @@
         app:icon="@drawable/sync"
         app:key="sync_header"
         app:title="@string/sync_header" />
+
+    <Preference
+        app:fragment="com.example.example.ui.settings.SettingsFragment"
+        app:icon="@drawable/ic_menu_settings"
+        app:key="settings_header"
+        app:title="Settings" />
 
 </PreferenceScreen>

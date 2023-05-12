@@ -6,7 +6,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
+import com.example.example.ui.account.AccountActivity;
 import com.example.example.ui.settings.SettingsActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -35,13 +37,6 @@ public class MenuBar extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMenu.toolbar);
-        binding.appBarMenu.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -54,11 +49,14 @@ public class MenuBar extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        ImageButton accountButton = binding.navView.getHeaderView(0).findViewById(R.id.account_button);
+
+        accountButton.setOnClickListener(view -> startActivity(new Intent(MenuBar.this, AccountActivity.class)));
+
         navigationView.setNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
 
             if (id == R.id.nav_settings) {
-                Log.i("TEST", "You pressed settings");
                 startActivity(new Intent(MenuBar.this, SettingsActivity.class));
             } else {
                 // Handle other menu item selections

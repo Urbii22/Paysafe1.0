@@ -2,6 +2,7 @@ package com.example.example.ui.settings;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.example.example.R;
 
@@ -39,7 +41,7 @@ public class SettingsActivity extends AppCompatActivity implements
                     }
                 });
 
-        Toolbar myToolbar = findViewById(R.id.toolbar_default);
+        Toolbar myToolbar = findViewById(R.id.settings_toolbar);
         setSupportActionBar(myToolbar);
 
         ActionBar actionBar = getSupportActionBar();
@@ -103,6 +105,76 @@ public class SettingsActivity extends AppCompatActivity implements
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.sync_preferences, rootKey);
+        }
+    }
+
+    public static class NotificationFragment extends PreferenceFragmentCompat {
+
+        @Override
+        public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
+            setPreferencesFromResource(R.xml.notification_preferences, rootKey);
+        }
+    }
+
+    public static class PrivacySecurityFragment extends PreferenceFragmentCompat {
+
+        SwitchPreferenceCompat switchA, switchB, switchC;
+
+        @Override
+        public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
+            setPreferencesFromResource(R.xml.privacy_security_preferences, rootKey);
+
+            // Find switches
+            switchA = findPreference("use_biometrics");
+            switchB = findPreference("payment_confirmation");
+            switchC = findPreference("payment_confirmation_with_biometrics");
+
+            // Setup listener
+            switchA.setOnPreferenceChangeListener((preference, newValue) -> {
+                updateSwitchCSummary((Boolean) newValue, switchB.isChecked());
+                return true;
+            });
+
+            switchB.setOnPreferenceChangeListener((preference, newValue) -> {
+                updateSwitchCSummary(switchA.isChecked(), (Boolean) newValue);
+                return true;
+            });
+
+            // First time (to remember the state)
+            updateSwitchCSummary(switchA.isChecked(), switchB.isChecked());
+        }
+
+        private void updateSwitchCSummary(Boolean valueA, Boolean valueB) {
+            boolean switchAValue = valueA;
+            boolean switchBValue = valueB;
+            String summary;
+
+            if (switchAValue && switchBValue) {
+                summary = getString(R.string.payment_confirmation_with_biometrics_summary);
+                switchC.setEnabled(true);
+            } else {
+                summary = "Para habilitar esta opción, habilite tanto 'Usar medidas biométricas' y 'Confirmación de pago'";
+                switchC.setChecked(false);
+                switchC.setEnabled(false);
+            }
+
+            switchC.setSummary(summary);
+        }
+    }
+
+    public static class AboutFragment extends PreferenceFragmentCompat {
+
+        @Override
+        public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
+            setPreferencesFromResource(R.xml.about_preferences, rootKey);
+        }
+    }
+
+    public static class HelpFragment extends PreferenceFragmentCompat {
+
+        @Override
+        public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
+            setPreferencesFromResource(R.xml.help_preferences, rootKey);
         }
     }
 }
