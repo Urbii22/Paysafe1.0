@@ -31,7 +31,7 @@ public class MenuEmpresa extends AppCompatActivity {
         });
         Recibir.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(MenuEmpresa.this, MetodosCobro.class));
+                startActivity(new Intent(MenuEmpresa.this, RecibirEmpresa.class));
             }
         });
     }
