@@ -19,7 +19,7 @@ public class VerificarUsuarioEmpresa extends AppCompatActivity {
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageButton Regresar = (ImageButton) findViewById(R.id.RegresarVerificar);
         Verificar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(VerificarUsuarioEmpresa.this, VerificarUsuarioEmpresa.class));
+                startActivity(new Intent(VerificarUsuarioEmpresa.this, CobroExito.class));
             }
         });
         Regresar.setOnClickListener(new View.OnClickListener(){
