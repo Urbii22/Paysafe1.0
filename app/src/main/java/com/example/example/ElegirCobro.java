@@ -25,7 +25,7 @@ public class ElegirCobro extends AppCompatActivity {
         });
         Tarjeta.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(ElegirCobro.this, MetodosCobro.class));
+                startActivity(new Intent(ElegirCobro.this, TarjetaEmpresa.class));
             }
         });
         Wallet.setOnClickListener(new View.OnClickListener(){
