@@ -60,7 +60,7 @@ public class ModoEmpresa extends AppCompatActivity {
         bRegistro.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 EscribirFichero();
-                startActivity(new Intent(ModoEmpresa.this, MenuBarEmpresa.class));
+                startActivity(new Intent(ModoEmpresa.this, MenuEmpresa.class));
             }
         });
 
