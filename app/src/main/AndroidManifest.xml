@@ -12,6 +12,12 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".ui.pay.PayConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pay.PayVerify"
+            android:exported="false" />
+        <activity
             android:name=".ui.account.AccountActivity"
             android:exported="false" />
         <activity

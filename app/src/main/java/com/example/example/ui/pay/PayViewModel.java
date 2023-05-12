@@ -10,7 +10,7 @@ public class PayViewModel extends ViewModel {
 
     public PayViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is the pay fragment");
+        mText.setValue("PAGAR");
     }
 
     public LiveData<String> getText() {
