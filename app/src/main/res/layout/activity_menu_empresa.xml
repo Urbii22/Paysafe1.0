@@ -18,7 +18,6 @@
         android:textColor="#070707"
         android:textSize="27sp"
         android:textStyle="bold"
-        android:contentDescription="Boton lleva a metodos de cobro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -29,13 +28,14 @@
         />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
+        android:id="@+id/MetodoCobro"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="106dp"
         android:layout_marginBottom="659dp"
+        android:backgroundTint="#DAE6C7"
         android:contentDescription="@android:string/yes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,4 +45,53 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/credit_card_multiple"
         tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/CuentaEmpresa"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="640dp"
+        android:contentDescription="Cuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/MetodoCobro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/iconocuenta"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="204dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="394dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MetodoCobro"
+        app:srcCompat="@drawable/logoihm" />
+
+    <Button
+        android:id="@+id/RecibirEmpresa"
+        android:layout_width="191dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="#0F2000"
+        android:text="Recibir"
+        android:textColor="#D9E5C6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
