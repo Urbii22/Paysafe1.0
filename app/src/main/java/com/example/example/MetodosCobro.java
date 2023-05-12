@@ -22,6 +22,11 @@ public class MetodosCobro extends AppCompatActivity {
                 startActivity(new Intent(MetodosCobro.this, MenuEmpresa.class));
             }
         });
+        Añadir.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                startActivity(new Intent(MetodosCobro.this, ElegirCobro.class));
+            }
+        });
 
     }
 }

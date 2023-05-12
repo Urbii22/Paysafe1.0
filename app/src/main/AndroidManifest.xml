@@ -12,6 +12,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".ElegirCobro"
+            android:exported="false" />
+        <activity
             android:name=".RecibirEmpresa"
             android:exported="false" />
         <activity
