@@ -9,57 +9,40 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="290dp"
-        android:layout_marginBottom="677dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="84dp"
         android:text="Modo Empresa"
         android:textColor="#070707"
         android:textSize="27sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181"
-        tools:ignore="MissingConstraints"
-        />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/MetodoCobro"
         android:layout_width="53dp"
         android:layout_height="51dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="659dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="84dp"
         android:backgroundTint="#DAE6C7"
         android:contentDescription="@android:string/yes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/CuentaEmpresa"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/credit_card_multiple"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/CuentaEmpresa"
-        android:layout_width="64dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="640dp"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="600dp"
         android:contentDescription="Cuenta"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/MetodoCobro"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/iconocuenta"
         tools:ignore="MissingConstraints" />
 
@@ -68,14 +51,14 @@
         android:layout_width="204dp"
         android:layout_height="195dp"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="59dp"
         android:layout_marginEnd="106dp"
-        android:layout_marginBottom="394dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/RecibirEmpresa"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MetodoCobro"
         app:srcCompat="@drawable/logoihm" />
+
 
 
     <View
@@ -83,11 +66,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#80191818" />
+
     <Button
         android:id="@+id/RecibirEmpresa"
         android:layout_width="191dp"
         android:layout_height="74dp"
-        android:layout_marginTop="159dp"
         android:layout_marginBottom="159dp"
         android:backgroundTint="#DAE6C7"
         android:text="Recibir"
@@ -96,7 +79,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
