@@ -24,7 +24,7 @@ public class VerificarUsuarioEmpresa extends AppCompatActivity {
         });
         Regresar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(VerificarUsuarioEmpresa.this, TarjetaEmpresa.class));
+                startActivity(new Intent(VerificarUsuarioEmpresa.this, ElegirCobro.class));
             }
         });
     }
