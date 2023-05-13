@@ -16,6 +16,7 @@
     <string name="menu_payment_methods">Métodos de pago</string>
     <string name="menu_settings">Ajustes</string>
     <string name="title_activity_menu_bar_empresa">MenuBarEmpresa</string>
+    <string name="title_activity_menu_bar_empresa">MenuBarEmpresa</string>
 
     <!-- Preference Titles -->
     <string name="general_header">General</string>

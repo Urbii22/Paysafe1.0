@@ -36,6 +36,30 @@
             android:name=".MenuEmpresa"
             android:exported="false" />
         <activity
+            android:name=".WalletEmpesa"
+            android:exported="false" />
+        <activity
+            android:name=".CobroExito"
+            android:exported="false" />
+        <activity
+            android:name=".VerificarUsuarioEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".TarjetaEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".ElegirCobro"
+            android:exported="false" />
+        <activity
+            android:name=".RecibirEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".MetodosCobro"
+            android:exported="false" />
+        <activity
+            android:name=".MenuEmpresa"
+            android:exported="false" />
+        <activity
             android:name=".ui.pay.PayConfirmation"
             android:exported="false" />
         <activity
