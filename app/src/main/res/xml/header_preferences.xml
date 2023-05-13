@@ -39,25 +39,23 @@
 
     <PreferenceCategory app:title="@string/account_header">
 
-        <!-- Cuenta -->
+        <Preference
+            android:title="@string/account_button"
+            android:summary="@string/account_button_description"
+            android:key="account_preference_button"
+            android:icon="@drawable/ic_account_24px" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.example"
+                android:targetClass="com.example.example.ui.account.AccountActivity" />
+        </Preference>
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$LogoutFragment"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_settings_logout"
+            android:key="logout_preference" />
 
     </PreferenceCategory>
-
-    <Preference
-        android:title="@string/account_button"
-        android:summary="@string/account_button_description"
-        android:key="account_preference_button"
-        android:icon="@drawable/ic_account_24px" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.example.example"
-            android:targetClass="com.example.example.ui.account.AccountActivity" />
-    </Preference>
-
-    <Preference
-        app:fragment="com.example.example.ui.settings.SettingsActivity$LogoutFragment"
-        android:title="@string/logout"
-        android:icon="@drawable/ic_settings_logout"
-        android:key="logout_preference" />
 
 </PreferenceScreen>

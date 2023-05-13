@@ -88,6 +88,7 @@ public class AccountActivity extends AppCompatActivity {
             if(editMainText.getVisibility() == View.GONE){
                 mainText.setVisibility(View.GONE);
                 editMainText.setVisibility(View.VISIBLE);
+                editMainText.setText(mainText.getText().toString());
             }else{
                 mainText.setVisibility(View.VISIBLE);
                 editMainText.setVisibility(View.GONE);
