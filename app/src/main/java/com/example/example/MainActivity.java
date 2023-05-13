@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -25,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText username = (EditText) findViewById(R.id.editTextUssername);
         EditText password = (EditText) findViewById(R.id.editTextTextPassword);
+
 
         String nombreArchivo = "miarchivo2.txt";
         String contenido;
@@ -51,12 +51,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
+        setContentView(R.layout.activity_main);
+        TextView regsitrar = (TextView) findViewById(R.id.Enlace_registro);
         Button b= (Button) findViewById(R.id.b_registro);
         EditText username = (EditText) findViewById(R.id.editTextUssername);
         EditText password = (EditText) findViewById(R.id.editTextTextPassword);
         TextView error = (TextView) findViewById(R.id.textView5);
+
 
 /*
         b.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                EscribirFichero();
                LeerFichero();
+            }
+        });
+
+        regsitrar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Registro.class));
             }
         });
 

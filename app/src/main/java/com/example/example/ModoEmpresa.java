@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -57,6 +58,8 @@ public class ModoEmpresa extends AppCompatActivity {
         setContentView(R.layout.activity_modo_empresa);
         Button bRegistro = (Button) findViewById(R.id.b_registro);
         Button bEmpresa = (Button) findViewById(R.id.b_empresa);
+        TextView login = (TextView) findViewById(R.id.Inicia_Sesion);
+
 
         bRegistro.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
@@ -72,6 +75,11 @@ public class ModoEmpresa extends AppCompatActivity {
         bEmpresa.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(ModoEmpresa.this,Registro.class));
+            }
+        });
+        login.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                startActivity(new Intent(ModoEmpresa.this,MainActivity.class));
             }
         });
     }

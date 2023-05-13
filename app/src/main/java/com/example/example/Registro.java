@@ -21,7 +21,6 @@ public class Registro extends AppCompatActivity {
 
 
 
-
     public void EscribirFichero(){ //deberia ser para la parte del registro
 
         EditText username = (EditText) findViewById(R.id.usuario);
@@ -64,6 +63,7 @@ public class Registro extends AppCompatActivity {
 
         Button bRegistro = (Button) findViewById(R.id.b_registro);
         Button bEmpresa = (Button) findViewById(R.id.b_empresa);
+        TextView login = (TextView) findViewById(R.id.Inicia_Sesion);
 
         bRegistro.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
@@ -85,5 +85,13 @@ public class Registro extends AppCompatActivity {
 
             }
         });
-    }
+
+        login.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                startActivity(new Intent(Registro.this,MainActivity.class));
+            }
+        });
+
+
+}
 }

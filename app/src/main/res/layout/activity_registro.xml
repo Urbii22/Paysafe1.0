@@ -21,7 +21,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.766" />
+      app:layout_constraintVertical_bias="0.791" />
 
   <ImageView
       android:id="@+id/imageView"
@@ -211,7 +211,6 @@
       app:layout_constraintVertical_bias="0.452" />
 
 
-
   <TextView
       android:id="@+id/textView13"
       android:layout_width="wrap_content"
@@ -222,7 +221,7 @@
       app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.83" />
+      app:layout_constraintVertical_bias="0.848" />
 
   <Button
       android:id="@+id/b_empresa"
@@ -288,5 +287,33 @@
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.401"
       app:srcCompat="@drawable/baseline_woman_24" />
+
+  <TextView
+      android:id="@+id/texto_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="¿Ya tienes Cuenta?"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.299"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.678" />
+
+  <TextView
+      android:id="@+id/Inicia_Sesion"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Inica Sesión"
+      android:textColor="#3F51B5"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.699"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.678" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
