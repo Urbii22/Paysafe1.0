@@ -1,6 +1,8 @@
 package com.example.example.ui.settings;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
@@ -12,7 +14,9 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreferenceCompat;
 
+import com.example.example.Pagina_Bienvenida;
 import com.example.example.R;
+import com.example.example.ui.account.AccountActivity;
 
 public class SettingsActivity extends AppCompatActivity implements
         PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
@@ -32,12 +36,9 @@ public class SettingsActivity extends AppCompatActivity implements
             setTitle(savedInstanceState.getCharSequence(TITLE_TAG));
         }
         getSupportFragmentManager().addOnBackStackChangedListener(
-                new FragmentManager.OnBackStackChangedListener() {
-                    @Override
-                    public void onBackStackChanged() {
-                        if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
-                            setTitle(R.string.title_activity_settings);
-                        }
+                () -> {
+                    if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
+                        setTitle(R.string.title_activity_settings);
                     }
                 });
 
@@ -74,6 +75,17 @@ public class SettingsActivity extends AppCompatActivity implements
                 pref.getFragment());
         fragment.setArguments(args);
         fragment.setTargetFragment(caller, 0);
+
+        Log.i("TEST", pref.getFragment());
+
+        if (pref.getFragment().equals("com.example.example.ui.settings.SettingsActivity$LogoutFragment")) {
+            // Impedir que el usuario pueda volver hacia atrás al cerrar la sesión
+            Intent intent = new Intent(SettingsActivity.this, Pagina_Bienvenida.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+        }
+
         // Replace the existing Fragment with the new Fragment
         getSupportFragmentManager().beginTransaction()
                 .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right)
@@ -175,6 +187,14 @@ public class SettingsActivity extends AppCompatActivity implements
         @Override
         public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
             setPreferencesFromResource(R.xml.help_preferences, rootKey);
+        }
+    }
+
+    public static class LogoutFragment extends PreferenceFragmentCompat {
+
+        @Override
+        public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
+            setPreferencesFromResource(R.xml.header_preferences, rootKey);
         }
     }
 }

@@ -34,7 +34,7 @@
         android:background="@drawable/solid_color_cicle_button"
         android:contextClickable="true"
         android:focusable="true"
-        android:src="@drawable/ic_account"
+        android:src="@drawable/ic_account_42px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -102,7 +102,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if ((StoredUsername.equals(username.getText().toString()) && StoredPassword.equals(password.getText().toString())) || (password.getText().toString()).equals("12345")) {
                     error.setVisibility(View.INVISIBLE);
-                    startActivity(new Intent(MainActivity.this, MenuBar.class));
+
+                    // Al entrar al menu no poder volver a la pagina de login si se pulsa atrás
+                    Intent intent = new Intent(MainActivity.this, MenuBar.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+
                     falg = false;
                     break;
 

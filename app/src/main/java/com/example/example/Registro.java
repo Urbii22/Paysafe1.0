@@ -69,7 +69,11 @@ public class Registro extends AppCompatActivity {
             public void onClick(View view) {
                 EscribirFichero();
 
-                    startActivity(new Intent(Registro.this, MenuBar.class));
+                // Al entrar al menu no poder volver a la pagina de login si se pulsa atrás
+                Intent intent = new Intent(Registro.this, MenuBar.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
 
             }
         });

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -60,7 +61,11 @@ public class ModoEmpresa extends AppCompatActivity {
         bRegistro.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 EscribirFichero();
-                startActivity(new Intent(ModoEmpresa.this, MenuBar.class));
+
+                // Al entrar al menu no poder volver a la pagina de login si se pulsa atrás
+                Intent intent = new Intent(ModoEmpresa.this, MenuBar.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
             }
         });
 

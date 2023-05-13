@@ -23,9 +23,26 @@
 
     <!-- Account Preferences -->
     <string name="account_button">Cuenta</string>
+    <string name="account_button_description">Accede a la información de tu cuenta.</string>
+    <string name="personal_info">Información personal</string>
+    <string name="tap_to_change">Toca para cambiar foto de perfil</string>
+    
+    <string name="cat_name">Nombre</string>
+    <string name="cat_name_main">Apellido1, Apellido2, Nombre</string>
+    <string name="cat_birthday">Fecha de nacimiento</string>
+    <string name="cat_birthday_main">01/01/1990</string>
+    <string name="cat_email">E-Mail</string>
+    <string name="cat_email_main">example_account@example.com</string>
+    <string name="cat_phone">Teléfono</string>
+    <string name="cat_phone_main">(+99) 999 999 999</string>
+
+    <string name="account_extra_options">Opciones adicionales</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="delete_account">Eliminar cuenta</string>
 
     <!-- Notifications Preferences -->
     <string name="notifications_header">Notificaciones</string>
+    <string name="notifications_header_summary">Modifica las notificaciones de tu cuenta.</string>
     <string name="notification_pref_header">Pagos, envíos y ofertas</string>
     <string name="notification_pref_security_header">Seguridad</string>
 
@@ -40,6 +57,7 @@
 
     <!-- Security & Privacy Preferences -->
     <string name="privacy_security_header">Seguridad y privacidad</string>
+    <string name="privacy_security_header_summary">Modifica tus preferencias de seguridad y privacidad.</string>
     <string name="security_pref_header">Inicio de sesión y pagos</string>
     <string name="privacy_pref_header">Privacidad y gestión de datos</string>
 
@@ -56,6 +74,7 @@
 
     <!-- About Preferences -->
     <string name="about_header">Acerca de</string>
+    <string name="about_header_summary">Información adicional acerca de la aplicación y nuestra empresa.</string>
     <string name="about_perf_header">Recursos externos</string>
     <string name="payment_policy">Política de uso y pagos</string>
     <string name="final_user_agreement">Acuerdos del usuario final</string>
@@ -64,6 +83,7 @@
 
     <!-- Help Preferences -->
     <string name="help_header">Ayuda</string>
+    <string name="help_header_summary">Centro de ayuda y otros recursos.</string>
     <string name="help_center">Ayuda</string>
     <string name="faq">FAQ</string>
     <string name="bug_report">Reportar errores</string>
