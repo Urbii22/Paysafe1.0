@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.example.ui.account.AccountActivity;
+
 public class MenuEmpresa extends AppCompatActivity {
 
     @Override
@@ -26,7 +28,7 @@ public class MenuEmpresa extends AppCompatActivity {
 
         CuentaEmpresa.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                startActivity(new Intent(MenuEmpresa.this, MetodosCobro.class));
+                startActivity(new Intent(MenuEmpresa.this, AccountActivity.class));
             }
         });
         Recibir.setOnClickListener(new View.OnClickListener(){
