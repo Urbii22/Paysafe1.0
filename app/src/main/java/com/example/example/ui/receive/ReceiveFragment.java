@@ -66,9 +66,19 @@ public class ReceiveFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), PayVerify.class);
-                Integer cantidad = Integer.parseInt(edt_cantidad.getText().toString());
-                Integer pagador = Integer.parseInt(edt_pagador.getText().toString());
+                Integer cantidad = 0, pagador = 0;
+                try{
+                    cantidad = Integer.parseInt(edt_cantidad.getText().toString());
+                }catch(NumberFormatException e){
+                    edt_cantidad.setError("Introduce un valor correcto");
+                }
+                try{
+                    pagador = Integer.parseInt(edt_pagador.getText().toString());
+                }catch(NumberFormatException e){
+                    edt_pagador.setError("Introduce un valor correcto");
+                }
                 boolean cant=false, dest=false;
+
                 if(cantidad<0 || cantidad > 234.45){
                     edt_cantidad.setError("Cantidad no permitida");
                 }else{

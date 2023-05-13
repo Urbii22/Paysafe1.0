@@ -40,21 +40,27 @@ public class PayVerify extends AppCompatActivity {
         btn_validar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(Integer.valueOf(edt_codigo.getText().toString()) == 1111){
-                    Toast.makeText(getApplicationContext(), "Código correcto", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getApplicationContext(), PayConfirmation.class);
-                    if(mode == 1){
-                        i.putExtra("mode", "1");
-                    }else i.putExtra("mode", "2");
+                try{
+                    if(Integer.valueOf(edt_codigo.getText().toString()) == 1111){
+                        Toast.makeText(getApplicationContext(), "Código correcto", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(), PayConfirmation.class);
+                        if(mode == 1){
+                            i.putExtra("mode", "1");
+                        }else i.putExtra("mode", "2");
 
-                    i.putExtra("Cantidad", cantidad);
-                    i.putExtra("Destinatario", destinatario);
-                    i.putExtra("metodo", metodo);
-                    startActivity(i);
-                    finish();
-                }else{
-                    Toast.makeText(getApplicationContext(), "Código incorrecto", Toast.LENGTH_SHORT).show();
+                        i.putExtra("Cantidad", cantidad);
+                        i.putExtra("Destinatario", destinatario);
+                        i.putExtra("metodo", metodo);
+                        startActivity(i);
+                        finish();
+                    }else{
+                        //Toast.makeText(getApplicationContext(), "Código incorrecto", Toast.LENGTH_SHORT).show();
+                        edt_codigo.setError("El codigo es incorrecto");
+                    }
+                }catch (NumberFormatException e){
+                    edt_codigo.setError("Introduce un valor");
                 }
+
             }
         });
     }

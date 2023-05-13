@@ -60,18 +60,36 @@ public class PayFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), PayVerify.class);
-                Integer cantidad = Integer.parseInt(edt_cantidad.getText().toString());
-                Integer destinatario = Integer.parseInt(edt_destinatario.getText().toString());
+                String cantidadTemp = edt_cantidad.getText().toString();
+                String destinatarioTemp = edt_destinatario.getText().toString();
+                Integer cantidad = 0, destinatario = 0;
                 boolean cant=false, dest=false;
+                try{
+                    cantidad = Integer.parseInt(cantidadTemp);
+                    //cant = true;
+                }catch(NumberFormatException e){
+                    edt_cantidad.setError("Introduce un valor correcto");
+                }
+                try{
+                    destinatario = Integer.parseInt(destinatarioTemp);
+                    //dest = true;
+                }catch (NumberFormatException e){
+
+                    edt_destinatario.setError("Introduce un valor correcto");
+                }
+
+                i.putExtra("Cantidad", cantidadTemp);
+                i.putExtra("Destinatario", destinatarioTemp);
+
                 if(cantidad<0 || cantidad > 234.45){
                     edt_cantidad.setError("Cantidad no permitida");
                 }else{
-                    i.putExtra("Cantidad", cantidad.toString());
+
                     Toast.makeText(getActivity(), cantidad.toString(), Toast.LENGTH_LONG).show();
                     cant=true;
                 }
                 if(destinatario == 123456){
-                    i.putExtra("Destinatario", destinatario.toString());
+
                     dest=true;
                 }else{
                     edt_destinatario.setError("Destinatario no encontrado");
