@@ -6,16 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Pagina_Bienvenida">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="279dp"
-        android:layout_height="311dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/imagen_de_whatsapp_2023_03_28_a_las_14_48_00" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -63,5 +54,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.927" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="279dp"
+        android:layout_height="311dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/logoihm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

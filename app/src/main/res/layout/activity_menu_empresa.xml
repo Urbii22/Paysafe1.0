@@ -54,6 +54,7 @@
         android:layout_marginStart="101dp"
         android:layout_marginEnd="106dp"
         android:layout_marginBottom="89dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/RecibirEmpresa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -73,5 +74,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="204dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/RecibirEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/imagen_de_whatsapp_2023_03_28_a_las_14_48_00" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
