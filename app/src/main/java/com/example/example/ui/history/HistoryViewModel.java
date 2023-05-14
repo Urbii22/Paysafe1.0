@@ -6,14 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 public class HistoryViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
-
     public HistoryViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This the history fragment");
-    }
 
-    public LiveData<String> getText() {
-        return mText;
     }
 }

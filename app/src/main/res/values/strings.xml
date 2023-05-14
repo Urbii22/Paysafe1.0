@@ -91,4 +91,39 @@
     <string name="bug_report">Reportar errores</string>
     <string name="chat_with_us">Contacta con nosotros</string>
 
+    <!-- History card headers -->
+    <string name="extra_main_header_from">De:</string>
+    <string name="extra_main_header_to">Para:</string>
+    <string name="extra_main_header">Información adicional</string>
+    <string name="extra_payment_header">Método de pago</string>
+    <string name="extra_cat_header">Categoría</string>
+
+    <!-- History example cards -->
+    <string name="c1_title">Mercadona S.A.</string>
+    <string name="c1_amount">43,56 €</string>
+    <string name="c1_from">Apellido1 Apellido2, Nombre</string>
+    <string name="c1_to">Mercadona S.A.</string>
+    <string name="c1_date">10 de abril de 2023</string>
+    <string name="c1_method">Transferencia</string>
+    <string name="c1_id">TRX40056342</string>
+    <string name="c1_desc">Bienes de consumo</string>
+
+    <string name="c2_title">La Tiendita de Iker S.L.</string>
+    <string name="c2_amount">23,43 €</string>
+    <string name="c2_from">Apellido1 Apellido2, Nombre</string>
+    <string name="c2_to">La Tiendita de Iker S.L.</string>
+    <string name="c2_date">21 de abril de 2023</string>
+    <string name="c2_method">PayPal</string>
+    <string name="c2_id">TRX50239485</string>
+    <string name="c2_desc">Alimentos y provisiones</string>
+
+    <string name="c3_title">Material trabajo</string>
+    <string name="c3_amount">69,42 €</string>
+    <string name="c3_from">Apellido1 Apellido2, Nombre</string>
+    <string name="c3_to">Gerardo Prieto Temiño IV</string>
+    <string name="c3_date">14 de mayo de 2023</string>
+    <string name="c3_method">PayPal</string>
+    <string name="c3_id">TRX10023456</string>
+    <string name="c3_desc">Varios</string>
+
 </resources>
