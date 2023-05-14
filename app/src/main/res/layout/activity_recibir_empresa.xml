@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecibirEmpresa">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="29dp"
+        android:text="Modo Empresa"
+        android:textColor="#070707"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <ImageButton
+        android:id="@+id/MetodoCobro"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#DAE6C7"
+        android:contentDescription="@android:string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/CuentaEmpresa"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:srcCompat="@drawable/credit_card_multiple"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <ImageButton
+        android:id="@+id/CuentaEmpresa"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="600dp"
+        android:contentDescription="Cuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MetodoCobro"
+        app:srcCompat="@drawable/iconocuenta"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="414dp"
+        android:layout_height="731dp"
+        android:background="#80191818"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/RecibirEmpresa"
+        android:layout_width="191dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="#DAE6C7"
+        android:text="Recibir"
+        android:textColor="#0F2000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="202dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/imagen_de_whatsapp_2023_03_28_a_las_14_48_00" />
+
+    <View
+        android:id="@+id/darkOverlay2"
+        android:layout_width="198dp"
+        android:layout_height="199dp"
+        android:background="#80191818"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

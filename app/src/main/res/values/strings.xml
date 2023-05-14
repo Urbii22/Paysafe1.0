@@ -1,3 +1,129 @@
 <resources>
     <string name="app_name">Example</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PaySafe</string>
+    <string name="nav_header_subtitle">example_account@example.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Ajustes</string>
+
+    <!-- Menu Titles -->
+    <string name="menu_pay">Pagar</string>
+    <string name="menu_receive">Recibir</string>
+    <string name="menu_history">Historial</string>
+    <string name="menu_payment_methods">Métodos de pago</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="title_activity_menu_bar_empresa">MenuBarEmpresa</string>
+
+    <!-- Preference Titles -->
+    <string name="general_header">General</string>
+    <string name="information_header">Información</string>
+    <string name="account_header">Cuenta</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Account Preferences -->
+    <string name="account_button">Cuenta</string>
+    <string name="account_button_description">Accede a la información de tu cuenta.</string>
+    <string name="personal_info">Información personal</string>
+    <string name="tap_to_change">Toca para cambiar foto de perfil</string>
+
+    <string name="cat_name">Nombre</string>
+    <string name="cat_name_main">Apellido1, Apellido2, Nombre</string>
+    <string name="cat_birthday">Fecha de nacimiento</string>
+    <string name="cat_birthday_main">01/01/1990</string>
+    <string name="cat_email">E-Mail</string>
+    <string name="cat_email_main">example_account@example.com</string>
+    <string name="cat_phone">Teléfono</string>
+    <string name="cat_phone_main">(+99) 999 999 999</string>
+
+    <string name="account_extra_options">Opciones adicionales</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="delete_account">Eliminar cuenta</string>
+
+    <!-- Notifications Preferences -->
+    <string name="notifications_header">Notificaciones</string>
+    <string name="notifications_header_summary">Modifica las notificaciones de tu cuenta.</string>
+    <string name="notification_pref_header">Pagos, envíos y ofertas</string>
+    <string name="notification_pref_security_header">Seguridad</string>
+
+    <string name="receive_notification_title">Recibir dinero</string>
+    <string name="payment_request_notification_title">Recibir solicitudes de pago</string>
+    <string name="send_notification_title">Enviar dinero</string>
+    <string name="ads_notification_title">Anuncios y ofertas exclusivas</string>
+    <string name="ads_notification_summary">Recibir notificaciones acerca de ofertas y promociones que puedan serte de interés.</string>
+    <string name="security_notification_title">Alertas de seguridad</string>
+    <string name="security_notification_summary_on">Recibirás notificaciones de seguridad en este dispositivo.</string>
+    <string name="security_notification_summary_off">No recibirás notificaciones de seguridad en este dispositivo. Seguirás recibiendo alertas por email.</string>
+
+    <!-- Security & Privacy Preferences -->
+    <string name="privacy_security_header">Seguridad y privacidad</string>
+    <string name="privacy_security_header_summary">Modifica tus preferencias de seguridad y privacidad.</string>
+    <string name="security_pref_header">Inicio de sesión y pagos</string>
+    <string name="privacy_pref_header">Privacidad y gestión de datos</string>
+
+    <string name="use_biometrics">Usar medidas biométricas</string>
+    <string name="payment_confirmation">Confirmaciones de pago</string>
+    <string name="payment_confirmation_with_biometrics">Confirmación mediante medidas biométricas</string>
+    <string name="payment_confirmation_with_biometrics_summary">Permitir la confirmación de pagos mediante métodos de autenticación biométricos.</string>
+    <string name="authorized_devices">Dispositivos autorizados</string>
+    <string name="login_history">Historial de inicios de sesión</string>
+    <string name="collect_data">Recolectar datos anónimos de uso</string>
+    <string name="collect_data_summary">Permitir que la aplicación recoja datos de uso de manera anónima. Los datos se usan para mejorar las funcionalidades de la aplicación y corregir errores.</string>
+    <string name="request_data">Solicitar historial de datos de uso</string>
+    <string name="privacy_policy">Política de privacidad</string>
+
+    <!-- About Preferences -->
+    <string name="about_header">Acerca de</string>
+    <string name="about_header_summary">Información adicional acerca de la aplicación y nuestra empresa.</string>
+    <string name="about_perf_header">Recursos externos</string>
+    <string name="payment_policy">Política de uso y pagos</string>
+    <string name="final_user_agreement">Acuerdos del usuario final</string>
+    <string name="legal_agreement">Acuerdos legales</string>
+    <string name="thanks_to">Agradecimientos</string>
+
+    <!-- Help Preferences -->
+    <string name="help_header">Ayuda</string>
+    <string name="help_header_summary">Centro de ayuda y otros recursos.</string>
+    <string name="help_center">Ayuda</string>
+    <string name="faq">FAQ</string>
+    <string name="bug_report">Reportar errores</string>
+    <string name="chat_with_us">Contacta con nosotros</string>
+
+    <!-- History card headers -->
+    <string name="extra_main_header_from">De:</string>
+    <string name="extra_main_header_to">Para:</string>
+    <string name="extra_main_header">Información adicional</string>
+    <string name="extra_payment_header">Método de pago</string>
+    <string name="extra_cat_header">Categoría</string>
+
+    <!-- History example cards -->
+    <string name="c1_title">Mercadona S.A.</string>
+    <string name="c1_amount">43,56 €</string>
+    <string name="c1_from">Apellido1 Apellido2, Nombre</string>
+    <string name="c1_to">Mercadona S.A.</string>
+    <string name="c1_date">10 de abril de 2023</string>
+    <string name="c1_method">Transferencia</string>
+    <string name="c1_id">TRX40056342</string>
+    <string name="c1_desc">Bienes de consumo</string>
+
+    <string name="c2_title">La Tiendita de Iker S.L.</string>
+    <string name="c2_amount">23,43 €</string>
+    <string name="c2_from">Apellido1 Apellido2, Nombre</string>
+    <string name="c2_to">La Tiendita de Iker S.L.</string>
+    <string name="c2_date">21 de abril de 2023</string>
+    <string name="c2_method">PayPal</string>
+    <string name="c2_id">TRX50239485</string>
+    <string name="c2_desc">Alimentos y provisiones</string>
+
+    <string name="c3_title">Material trabajo</string>
+    <string name="c3_amount">69,42 €</string>
+    <string name="c3_from">Apellido1 Apellido2, Nombre</string>
+    <string name="c3_to">Gerardo Prieto Temiño IV</string>
+    <string name="c3_date">14 de mayo de 2023</string>
+    <string name="c3_method">PayPal</string>
+    <string name="c3_id">TRX10023456</string>
+    <string name="c3_desc">Varios</string>
+
 </resources>

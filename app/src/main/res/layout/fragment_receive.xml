@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.receive.ReceiveFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="RECIBIR"
+                android:textAlignment="center"
+                android:textSize="48sp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle_background"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linlay_Metodo_Pago"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_cantidad_pagar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Cantidad solicitada" />
+
+                <EditText
+                    android:id="@+id/edt_cantidad_dinero_recibir"
+                    android:layout_width="225dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Introduce la cantidad deseada(€)"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="10dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linlay_Metodo_Pago"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <TextView
+                    android:id="@+id/tv_metodo_pago_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:text="Método de pago" />
+
+                <Spinner
+                    android:id="@+id/spinner_receive"
+                    android:layout_width="250dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Spinner metodo pago"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linlay_Metodo_Pago">
+
+                <TextView
+                    android:id="@+id/tv_pagador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:text="Pagador" />
+
+                <EditText
+                    android:id="@+id/edt_pagador"
+                    android:layout_width="225dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Introduce el ID del pagador"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="gravity"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_pagar_receive"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="156dp"
+                android:gravity="center|center_horizontal"
+                android:text="PEDIR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,13 +9,59 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Example"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".WalletEmpesa"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CobroExito"
+            android:exported="false" />
+        <activity
+            android:name=".VerificarUsuarioEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".TarjetaEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".ElegirCobro"
+            android:exported="false" />
+        <activity
+            android:name=".RecibirEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".MetodosCobro"
+            android:exported="false" />
+        <activity
+            android:name=".MenuEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pay.PayConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pay.PayVerify"
+            android:exported="false" />
+        <activity
+            android:name=".ui.account.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MenuBar" />
+        <activity
+            android:name=".MenuBar"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ModoEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Pagina_Bienvenida"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +69,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

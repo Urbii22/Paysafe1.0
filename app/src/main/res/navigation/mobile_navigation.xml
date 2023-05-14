@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pay">
+
+    <fragment
+        android:id="@+id/nav_pay"
+        android:name="com.example.example.ui.pay.PayFragment"
+        android:label="@string/menu_pay"
+        tools:layout="@layout/fragment_pay" />
+
+    <fragment
+        android:id="@+id/nav_receive"
+        android:name="com.example.example.ui.receive.ReceiveFragment"
+        android:label="@string/menu_receive"
+        tools:layout="@layout/fragment_receive" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.example.ui.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_payment_method"
+        android:name="com.example.example.ui.payment_method.PaymentMethodFragment"
+        android:label="@string/menu_payment_methods"
+        tools:layout="@layout/fragment_payment_method" />
+
+</navigation>

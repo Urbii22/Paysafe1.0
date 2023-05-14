@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/general_header">
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$NotificationFragment"
+            app:icon="@drawable/ic_settings_notifications"
+            app:key="notifications_header"
+            app:title="@string/notifications_header"
+            app:summary="@string/notifications_header_summary" />
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$PrivacySecurityFragment"
+            app:icon="@drawable/ic_settings_privacy_security"
+            app:key="privacy_security_header"
+            app:title="@string/privacy_security_header"
+            app:summary="@string/privacy_security_header_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/information_header">
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$AboutFragment"
+            app:icon="@drawable/ic_settings_about"
+            app:key="about_header"
+            app:title="@string/about_header"
+            app:summary="@string/about_header_summary" />
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$HelpFragment"
+            app:icon="@drawable/ic_settings_help"
+            app:key="help_header"
+            app:title="@string/help_header"
+            app:summary="@string/help_header_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/account_header">
+
+        <Preference
+            android:title="@string/account_button"
+            android:summary="@string/account_button_description"
+            android:key="account_preference_button"
+            android:icon="@drawable/ic_account_24px" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.example"
+                android:targetClass="com.example.example.ui.account.AccountActivity" />
+        </Preference>
+
+        <Preference
+            app:fragment="com.example.example.ui.settings.SettingsActivity$LogoutFragment"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_settings_logout"
+            android:key="logout_preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
